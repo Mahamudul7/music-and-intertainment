@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Music</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/framework.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">Music</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="page2.html">Page 2</a>
+          </li>
+          <li><a href="page3.html">Blog</a>
+      </nav>
+      
+    </header>
+  </div>
+<div class="wrapper row3" id="wrapper">
+  <main class="hoc container clear">
+    <article class="group">
+      <div class="one_half first">
+        <h6 class="heading">Paydro Bio</h6>
+        <p style="font-size:1vw;">Payton campbell was born in October 14th.Better known by his stage name Paydro an American Rapper. Paydro began making music at the young age of 10, Never really took it serious until he was 21. Raised in  low income apartments he begin his quest to find a way to make a change with his explosive talents.
+In 2016 Paydro produced his first hit song & Count up the Bag& featuring Kai Kenn, from his upcoming cd &The hustle& The most highly anticipated cd of 2017.</p>
+        <p class="btmspace-30" style="font-size:1vw;"> Which is scheduled to realease January 2017. This single has took the states by storm, and has more to come.
+Wherever Paydro performs his movement is sure to follow. He brings the drive , the determination and the persistence to no doubt have a major label sign him, it's only a matter of time.</p>
+       <audio controls>
+  <source src="audio/paydro.ogg" type="audio/ogg">
+  <source src="audio/paydro.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      </div>
+      <div class="one_half"><a class="imgover" href="#"><img src="images/05.jpg" alt=""></a></div>
+    </article>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>  
+
+<div style="background-color:black;padding:20px;margin-top:30px;">
+<footer>
+<p style="text-align:center;">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+</footer>
+</div>
+<!-- JAVASCRIPTS -->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script src="javascript/particles.js"></script>
+<script src="javascript/jquery.min.js"></script>
+<script src="javascript/jquery.backtotop.js"></script>
+<script src="javascript/jquery.mobilemenu.js"></script>
+</body>
+</html>
