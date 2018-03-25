@@ -41,9 +41,10 @@
 :: 1.0 Base CSS
 -------------------- */
 
-* {
+body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 body {
@@ -51,6 +52,10 @@ body {
     position: relative;
     z-index: auto;
 }
+
+#particles-js
+ { height:100%;
+   width: 100%;}
 
 h1,
 h2,
@@ -205,6 +210,8 @@ ol {
     margin: 0;
     padding: 0;
 }
+
+
 
 #scrollUp {
     bottom: 55px;
